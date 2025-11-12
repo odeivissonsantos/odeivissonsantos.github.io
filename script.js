@@ -35,11 +35,11 @@ const translations = {
     navProjects: "Projetos",
     navContact: "Contato",
     heroTitle: "Olá, eu sou Deivisson Santos",
-    heroSubtitle: "Desenvolvedor Full Stack | .NET | Angular | SQL",
+    heroSubtitle: "Desenvolvedor Full Stack | C# | .NET | HTML | CSS | Javascript | Bootstrap | SQL | GIT",
     heroBtn: "Ver Projetos",
     aboutTitle: "Sobre Mim",
     aboutText:
-      "Sou um desenvolvedor Full Stack com experiência sólida em .NET, C#, Angular e SQL Server, atualmente atuando como Analista de Sistemas no DETRAN-BA. " +
+      "Sou um desenvolvedor Full Stack com experiência sólida em C#, .NET, HTML, CSS, Javascript, Bootstrap, GIT e SQL Server, atualmente atuando como Analista de Sistemas no DETRAN-BA. " +
       "Ao longo da minha trajetória, construí soluções web e APIs escaláveis que impactam milhares de usuários, sempre com foco em qualidade, performance e boas práticas de engenharia. " +
       "Tenho formação em Engenharia e Arquitetura de Software, o que me permite unir visão técnica e estratégica no desenvolvimento de aplicações. " +
       "Busco constantemente aprimorar minhas habilidades — especialmente em inglês e arquitetura de software moderna — para colaborar em ambientes internacionais e projetos desafiadores.",
@@ -60,11 +60,11 @@ const translations = {
     navProjects: "Projects",
     navContact: "Contact",
     heroTitle: "Hi, I'm Deivisson Santos",
-    heroSubtitle: "Full Stack Developer | .NET | Angular | SQL",
+    heroSubtitle: "Full Stack Developer | C# | .NET | HTML | CSS | Javascript | Bootstrap | SQL | GIT",
     heroBtn: "View Projects",
     aboutTitle: "About Me",
     aboutText:
-      "I’m a Full Stack Developer with solid experience in .NET, C#, Angular, and SQL Server, currently working as a Systems Analyst at DETRAN-BA. " +
+      "I’m a Full Stack Developer with solid experience in C#, .NET, HTML, CSS, Javascript, Bootstrap, GIT and SQL Server, currently working as a Systems Analyst at DETRAN-BA. " +
       "Throughout my career, I’ve built scalable web solutions and APIs impacting thousands of users, always focusing on quality, performance, and best software engineering practices. " +
       "I hold postgraduate degrees in Software Engineering and Software Architecture, which allow me to combine technical expertise with strategic vision when designing applications. " +
       "I’m continuously improving my skills — especially in English communication and modern software architecture — to collaborate in international and challenging environments.",
@@ -97,3 +97,4 @@ function applyTranslations(lang) {
     }
   });
 }
+
