@@ -35,14 +35,15 @@ const translations = {
     navProjects: "Projetos",
     navContact: "Contato",
     heroTitle: "Olá, eu sou Deivisson Santos",
-    heroSubtitle: "Desenvolvedor Full Stack | C# | .NET | HTML | CSS | Javascript | Bootstrap | SQL | GIT",
+    heroSubtitle: "Analista de Sistemas | Arquitetura de Software | .NET | Sistemas de Missão Crítica",
     heroBtn: "Ver Projetos",
     aboutTitle: "Sobre Mim",
-    aboutText:
-      "Sou um desenvolvedor Full Stack com experiência sólida em C#, .NET, HTML, CSS, Javascript, Bootstrap, GIT e SQL Server, atualmente atuando como Analista de Sistemas no DETRAN-BA. " +
-      "Ao longo da minha trajetória, construí soluções web e APIs escaláveis que impactam milhares de usuários, sempre com foco em qualidade, performance e boas práticas de engenharia. " +
-      "Tenho formação em Engenharia e Arquitetura de Software, o que me permite unir visão técnica e estratégica no desenvolvimento de aplicações. " +
-      "Busco constantemente aprimorar minhas habilidades — especialmente em inglês e arquitetura de software moderna — para colaborar em ambientes internacionais e projetos desafiadores.",
+aboutText:
+  "Sou Analista de Sistemas com atuação em desenvolvimento e evolução de sistemas de missão crítica na plataforma .NET, contribuindo para aplicações web e APIs integradas a bases governamentais de alta complexidade. " +
+  "Atuo na construção de soluções técnicas, apoio à definição de padrões arquiteturais, revisão de código e condução técnica das entregas em ambiente ágil. " +
+  "Antes de atuar exclusivamente em tecnologia, exerci gestão operacional e comercial, sendo responsável por equipe, indicadores de desempenho e resultados financeiros. " +
+  "Essa experiência consolidou minha visão estratégica, liderança e orientação a métricas — competências que hoje aplico na interface entre tecnologia e negócio. " +
+  "Minha formação em Arquitetura de Software, Engenharia de Software, Gestão de TI e Administração de Empresas me permite integrar visão técnica e estratégica na construção de soluções sustentáveis e escaláveis.",
     skillsTitle: "Minhas Skills",
     projectsTitle: "Projetos",
     project1:
@@ -60,14 +61,15 @@ const translations = {
     navProjects: "Projects",
     navContact: "Contact",
     heroTitle: "Hi, I'm Deivisson Santos",
-    heroSubtitle: "Full Stack Developer | C# | .NET | HTML | CSS | Javascript | Bootstrap | SQL | GIT",
+    heroSubtitle: "Systems Analyst | Software Architecture | .NET | Mission-Critical Systems",
     heroBtn: "View Projects",
     aboutTitle: "About Me",
-    aboutText:
-      "I’m a Full Stack Developer with solid experience in C#, .NET, HTML, CSS, Javascript, Bootstrap, GIT and SQL Server, currently working as a Systems Analyst at DETRAN-BA. " +
-      "Throughout my career, I’ve built scalable web solutions and APIs impacting thousands of users, always focusing on quality, performance, and best software engineering practices. " +
-      "I hold postgraduate degrees in Software Engineering and Software Architecture, which allow me to combine technical expertise with strategic vision when designing applications. " +
-      "I’m continuously improving my skills — especially in English communication and modern software architecture — to collaborate in international and challenging environments.",
+aboutText:
+  "I am a Systems Analyst working on the development and evolution of mission-critical systems using the .NET platform, contributing to web applications and APIs integrated with high-complexity governmental databases. " +
+  "My role includes technical solution design, architectural support, code review, and technical guidance in agile environments. " +
+  "Before focusing exclusively on technology, I worked in operational and commercial management, leading teams, tracking performance indicators, and being responsible for financial results. " +
+  "This background strengthened my strategic thinking, leadership skills, and results-oriented mindset — competencies I now apply at the intersection of technology and business. " +
+  "My academic background in Software Architecture, Software Engineering, IT Management, and Business Administration allows me to combine technical depth with strategic vision when building scalable and sustainable solutions.",
     skillsTitle: "My Skills",
     projectsTitle: "Projects",
     project1:
@@ -97,4 +99,3 @@ function applyTranslations(lang) {
     }
   });
 }
-
