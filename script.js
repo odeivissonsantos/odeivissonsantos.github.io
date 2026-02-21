@@ -34,9 +34,10 @@ const translations = {
     navSkills: "Skills",
     navProjects: "Projetos",
     navMentorship: "Mentoria Técnica",
+    navEducation: "Formação Acadêmica",
     navContact: "Contato",
     heroTitle: "Olá, eu sou Deivisson Santos",
-    heroSubtitle: "Analista de Sistemas | Arquitetura de Software | .NET | Sistemas de Missão Crítica",
+    heroSubtitle: "Especialista em Desenvolvimento | Engenharia e Arquitetura de Software | C# | .NET | Sistemas Críticos",
     heroBtn: "Ver Projetos",
     aboutTitle: "Sobre Mim",
     aboutText:
@@ -70,6 +71,23 @@ const translations = {
     mentorshipFormalTitle: "Formalização",
     mentorshipFormalText:
       "Certificação emitida ao final do processo, assinada digitalmente como reconhecimento da conclusão do programa.",
+      educationTitle: "Formação Acadêmica",
+
+edu1Title: "Pós-graduação em Arquitetura de Software",
+edu1Desc:
+  "Especialização focada em arquitetura moderna, padrões de projeto, escalabilidade e definição estrutural de sistemas.",
+
+edu2Title: "Pós-graduação em Engenharia de Software",
+edu2Desc:
+  "Formação voltada a qualidade de código, processos de desenvolvimento, testes, métricas e boas práticas de engenharia.",
+
+edu3Title: "Gestão em Tecnologia da Informação",
+edu3Desc:
+  "Integração entre tecnologia, processos organizacionais e estratégia empresarial.",
+
+edu4Title: "Bacharelado em Administração de Empresas",
+edu4Desc:
+  "Base sólida em gestão, indicadores financeiros, liderança de equipes e tomada de decisão estratégica.",
     contactTitle: "Contato"
   },
   en: {
@@ -78,9 +96,10 @@ const translations = {
     navSkills: "Skills",
     navProjects: "Projects",
     navMentorship: "Technical Mentorship",
+    navEducation: "Academic Background",
     navContact: "Contact",
     heroTitle: "Hi, I'm Deivisson Santos",
-    heroSubtitle: "Systems Analyst | Software Architecture | .NET | Mission-Critical Systems",
+    heroSubtitle: "Specialist in Development | Software Engineering and Architecture | C# |.NET | Critical Systems",
     heroBtn: "View Projects",
     aboutTitle: "About Me",
     aboutText:
@@ -114,6 +133,23 @@ const translations = {
     mentorshipFormalTitle: "Formal Recognition",
     mentorshipFormalText:
       "Certificate issued at the end of the program, digitally signed as formal recognition of completion.",
+      educationTitle: "Academic Background",
+
+edu1Title: "Postgraduate Degree in Software Architecture",
+edu1Desc:
+  "Specialization focused on modern architecture, design patterns, scalability, and structural system design.",
+
+edu2Title: "Postgraduate Degree in Software Engineering",
+edu2Desc:
+  "Focused on code quality, development processes, testing strategies, metrics, and engineering best practices.",
+
+edu3Title: "IT Management",
+edu3Desc:
+  "Education focused on aligning technology with organizational processes and business strategy.",
+
+edu4Title: "Bachelor's Degree in Business Administration",
+edu4Desc:
+  "Strong foundation in management, financial indicators, team leadership, and strategic decision-making.",
     contactTitle: "Contact"
   }
 };
