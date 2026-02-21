@@ -33,6 +33,7 @@ const translations = {
     navAbout: "Sobre",
     navSkills: "Skills",
     navProjects: "Projetos",
+    navMentorship: "Mentoria Técnica",
     navContact: "Contato",
     heroTitle: "Olá, eu sou Deivisson Santos",
     heroSubtitle: "Analista de Sistemas | Arquitetura de Software | .NET | Sistemas de Missão Crítica",
@@ -57,6 +58,18 @@ const translations = {
     project2:
       "O Traço Mágico é a primeira plataforma gratuita onde você pode baixar histórias educativas para colorir. " +
       "Uma iniciativa que une aprendizado e criatividade, incentivando crianças e adultos a explorarem o conhecimento de forma lúdica e divertida.",
+    mentorshipTitle: "Mentoria Técnica",
+    mentorshipIntro:
+      "Atuação voluntária na mentoria de desenvolvedores iniciantes, com acompanhamento estruturado em fundamentos de programação, boas práticas em .NET e direcionamento de carreira.",
+    mentorshipImpactTitle: "Impacto",
+    mentorshipImpactText:
+      "Mentoria individual com acompanhamento técnico, revisão de código e orientação prática para desenvolvimento profissional.",
+    mentorshipResultTitle: "Resultado",
+    mentorshipResultText:
+      "Um dos mentorados ingressou profissionalmente na área de tecnologia após o ciclo de mentoria.",
+    mentorshipFormalTitle: "Formalização",
+    mentorshipFormalText:
+      "Certificação emitida ao final do processo, assinada digitalmente como reconhecimento da conclusão do programa.",
     contactTitle: "Contato"
   },
   en: {
@@ -64,6 +77,7 @@ const translations = {
     navAbout: "About",
     navSkills: "Skills",
     navProjects: "Projects",
+    navMentorship: "Technical Mentorship",
     navContact: "Contact",
     heroTitle: "Hi, I'm Deivisson Santos",
     heroSubtitle: "Systems Analyst | Software Architecture | .NET | Mission-Critical Systems",
@@ -88,6 +102,18 @@ const translations = {
     project2:
       "Traço Mágico is the first free platform where you can download educational stories to color. " +
       "It’s an initiative that combines learning and creativity, encouraging children and adults to explore knowledge in a fun and engaging way.",
+    mentorshipTitle: "Technical Mentorship",
+    mentorshipIntro:
+      "Volunteer mentorship for aspiring developers, providing structured guidance in programming fundamentals, .NET best practices, and career direction.",
+    mentorshipImpactTitle: "Impact",
+    mentorshipImpactText:
+      "One-on-one technical mentoring including code review, practical guidance, and professional development support.",
+    mentorshipResultTitle: "Outcome",
+    mentorshipResultText:
+      "One mentee successfully transitioned into the technology field after completing the mentorship cycle.",
+    mentorshipFormalTitle: "Formal Recognition",
+    mentorshipFormalText:
+      "Certificate issued at the end of the program, digitally signed as formal recognition of completion.",
     contactTitle: "Contact"
   }
 };
