@@ -38,14 +38,19 @@ const translations = {
     heroSubtitle: "Analista de Sistemas | Arquitetura de Software | .NET | Sistemas de Missão Crítica",
     heroBtn: "Ver Projetos",
     aboutTitle: "Sobre Mim",
-aboutText:
-  "Sou Analista de Sistemas com atuação em desenvolvimento e evolução de sistemas de missão crítica na plataforma .NET, contribuindo para aplicações web e APIs integradas a bases governamentais de alta complexidade. " +
-  "Atuo na construção de soluções técnicas, apoio à definição de padrões arquiteturais, revisão de código e condução técnica das entregas em ambiente ágil. " +
-  "Antes de atuar exclusivamente em tecnologia, exerci gestão operacional e comercial, sendo responsável por equipe, indicadores de desempenho e resultados financeiros. " +
-  "Essa experiência consolidou minha visão estratégica, liderança e orientação a métricas — competências que hoje aplico na interface entre tecnologia e negócio. " +
-  "Minha formação em Arquitetura de Software, Engenharia de Software, Gestão de TI e Administração de Empresas me permite integrar visão técnica e estratégica na construção de soluções sustentáveis e escaláveis.",
-    skillsTitle: "Minhas Skills",
+    aboutText:
+      "Sou Analista de Sistemas com atuação em desenvolvimento e evolução de sistemas de missão crítica na plataforma .NET, contribuindo para aplicações web e APIs integradas a bases governamentais de alta complexidade. <br><br>" +
+      "Atuo na construção de soluções técnicas, apoio à definição de padrões arquiteturais, revisão de código e condução técnica das entregas em ambiente ágil. <br><br>" +
+      "Antes de atuar exclusivamente em tecnologia, exerci gestão operacional e comercial, sendo responsável por equipe, indicadores de desempenho e resultados financeiros. <br><br>" +
+      "Essa experiência consolidou minha visão estratégica, liderança e orientação a métricas — competências que hoje aplico na interface entre tecnologia e negócio. <br><br>" +
+      "Minha formação em Arquitetura de Software, Engenharia de Software, Gestão de TI e Administração de Empresas me permite integrar visão técnica e estratégica na construção de soluções sustentáveis e escaláveis.",
+    skillsTitle: "Competências Técnicas e Estratégicas",
+    skill1: "<strong>Engenharia de Software</strong><br>C# / .NET, APIs REST, Integrações, SQL Server",
+    skill2: "<strong>Arquitetura & Qualidade</strong><br>DDD, Arquitetura em Camadas, Clean Code, CI/CD",
+    skill3: "<strong>Liderança Técnica</strong><br>Code Review, Mentoria, Apoio em Refinamentos Ágeis",
+    skill4: "<strong>Visão de Negócio</strong><br>Gestão de Indicadores, Tomada de Decisão, Interface com Áreas Administrativas",
     projectsTitle: "Projetos",
+    projectsSubTitle: "Projetos desenvolvidos com responsabilidade técnica ponta a ponta, desde definição arquitetural até deploy e evolução contínua.",
     project1:
       "A Central dos Palpites é uma plataforma gratuita onde criamos desafios de placar exato para divertir a comunidade apaixonada por futebol. " +
       "Os primeiros que acertam o resultado levam o prêmio — uma experiência divertida, interativa e totalmente gratuita para os fãs do esporte.",
@@ -64,14 +69,19 @@ aboutText:
     heroSubtitle: "Systems Analyst | Software Architecture | .NET | Mission-Critical Systems",
     heroBtn: "View Projects",
     aboutTitle: "About Me",
-aboutText:
-  "I am a Systems Analyst working on the development and evolution of mission-critical systems using the .NET platform, contributing to web applications and APIs integrated with high-complexity governmental databases. " +
-  "My role includes technical solution design, architectural support, code review, and technical guidance in agile environments. " +
-  "Before focusing exclusively on technology, I worked in operational and commercial management, leading teams, tracking performance indicators, and being responsible for financial results. " +
-  "This background strengthened my strategic thinking, leadership skills, and results-oriented mindset — competencies I now apply at the intersection of technology and business. " +
-  "My academic background in Software Architecture, Software Engineering, IT Management, and Business Administration allows me to combine technical depth with strategic vision when building scalable and sustainable solutions.",
-    skillsTitle: "My Skills",
+    aboutText:
+      "I am a Systems Analyst working on the development and evolution of mission-critical systems using the .NET platform, contributing to web applications and APIs integrated with high-complexity governmental databases. <br><br>" +
+      "My role includes technical solution design, architectural support, code review, and technical guidance in agile environments. <br><br>" +
+      "Before focusing exclusively on technology, I worked in operational and commercial management, leading teams, tracking performance indicators, and being responsible for financial results. <br><br>" +
+      "This background strengthened my strategic thinking, leadership skills, and results-oriented mindset — competencies I now apply at the intersection of technology and business. <br><br>" +
+      "My academic background in Software Architecture, Software Engineering, IT Management, and Business Administration allows me to combine technical depth with strategic vision when building scalable and sustainable solutions.",
+    skillsTitle: "Technical and Strategic Competencies",
+    skill1: "<strong>Software Engineering</strong><br>C# / .NET, REST APIs, Integrations, SQL Server",
+    skill2: "<strong>Architecture & Quality</strong><br>DDD, Layered Architecture, Clean Code, CI/CD",
+    skill3: "<strong>Technical Leadership</strong><br>Code Review, Mentoring, Agile Technical Support",
+    skill4: "<strong>Business Vision</strong><br>Performance Indicators, Decision-Making, Cross-Functional Collaboration",
     projectsTitle: "Projects",
+    projectsSubTitle: "Projects developed with end-to-end technical responsibility, from architectural definition to deployment and continuous evolution.",
     project1:
       "Central dos Palpites is a free platform where we create exact score prediction challenges to engage the passionate football community. " +
       "The first users who guess the correct result win prizes — a fun, interactive, and 100% free experience for football fans.",
@@ -95,7 +105,7 @@ function applyTranslations(lang) {
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.getAttribute("data-i18n");
     if (translations[lang] && translations[lang][key]) {
-      el.textContent = translations[lang][key];
+      el.innerHTML = translations[lang][key];
     }
   });
 }
