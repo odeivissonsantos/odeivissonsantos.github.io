@@ -1,45 +1,55 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Deivisson Santos | Especialista em Desenvolvimento | Arquitetura & Engenharia de Software</title>
+  <meta name="description" content="Deivisson Santos — Engenharia e Arquitetura de Software. Sistemas de missão crítica, C#/.NET, APIs e soluções escaláveis." />
+  <meta name="theme-color" content="#0b1220" />
+  <title>Deivisson Santos — Engenharia & Arquitetura de Software</title>
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  
-  <!-- Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
-  <!-- CSS custom -->
-  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="light-mode">
+<body>
+
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <span class="topbar-status"><span class="dot"></span><span data-i18n="topStatus">Disponível para novos projetos</span></span>
+      <span class="d-none d-md-inline topbar-meta" data-i18n="topMeta">Engenharia de Software · .NET · Sistemas Críticos</span>
+    </div>
+  </div>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+  <nav class="navbar navbar-expand-lg fixed-top site-nav">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Deivisson Santos</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+        <span class="brand-mark">DS</span>
+        <span class="brand-text">Deivisson<span class="brand-accent">.dev</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Menu">
+        <i class="bi bi-list"></i>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav align-items-center">
+        <ul class="navbar-nav align-items-lg-center gap-lg-1">
           <li class="nav-item"><a class="nav-link" href="#home" data-i18n="navHome"></a></li>
+          <li class="nav-item"><a class="nav-link" href="#services" data-i18n="navServices"></a></li>
           <li class="nav-item"><a class="nav-link" href="#about" data-i18n="navAbout"></a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills" data-i18n="navSkills"></a></li>
           <li class="nav-item"><a class="nav-link" href="#projects" data-i18n="navProjects"></a></li>
+          <li class="nav-item"><a class="nav-link" href="#process" data-i18n="navProcess"></a></li>
           <li class="nav-item"><a class="nav-link" href="#mentorship" data-i18n="navMentorship"></a></li>
           <li class="nav-item"><a class="nav-link" href="#education" data-i18n="navEducation"></a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="navContact"></a></li>
-          <li class="nav-item mx-2">
-            <button id="themeToggle" class="btn btn-sm btn-outline-secondary"><i class="bi bi-moon"></i></button>
-          </li>
-          <li class="nav-item">
-            <select id="languageSelect" class="form-select form-select-sm">
-              <option value="pt">PT</option>
+          <li class="nav-item ms-lg-2 d-flex align-items-center gap-2 mt-2 mt-lg-0">
+            <button id="themeToggle" class="btn btn-icon" aria-label="Alternar tema"><i class="bi bi-moon-stars"></i></button>
+            <select id="languageSelect" class="form-select form-select-sm lang-select" aria-label="Idioma">
+              <option value="pt">PT-BR</option>
               <option value="en">EN</option>
             </select>
+            <a href="#contact" class="btn btn-accent btn-sm" data-i18n="navCta"></a>
           </li>
         </ul>
       </div>
@@ -47,95 +57,122 @@
   </nav>
 
   <!-- Hero -->
-<section id="home" class="py-5 text-center hero-section">
-  <div class="container mt-5 pt-5">
-    <img src="./images/foto.jpg" alt="Deivisson Santos" class="rounded-circle mb-3" width="150">
-    
-    <h1 data-i18n="heroTitle">Olá, eu sou Deivisson Santos</h1>
-    
-    <p class="lead" data-i18n="heroSubtitle">
-      Analista de Sistemas | Arquitetura de Software | .NET | Sistemas de Missão Crítica
-    </p>
-    
-    <a href="#projects" class="btn btn-primary mt-3" data-i18n="heroBtn">Ver Projetos</a>
-  </div>
-</section>
-
-  <!-- Sobre -->
-<section id="about" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="text-center mb-4" data-i18n="aboutTitle">Sobre Mim</h2>
-    <p data-i18n="aboutText" class="text-center">
-    </p>
-  </div>
-</section>
-
-  <!-- Skills -->
-<section id="skills" class="py-5">
-  <div class="container">
-    <h2 class="text-center mb-4" data-i18n="skillsTitle">
-      Competências Técnicas e Estratégicas
-    </h2>
-
-    <div class="row text-center">
-
-      <div class="col-md-3 col-6 mb-4">
-        <i class="bi bi-cpu fs-1"></i>
-        <p data-i18n="skill1"></p>
-      </div>
-
-      <div class="col-md-3 col-6 mb-4">
-        <i class="bi bi-diagram-3 fs-1"></i>
-        <p data-i18n="skill2"></p>
-      </div>
-
-      <div class="col-md-3 col-6 mb-4">
-        <i class="bi bi-people fs-1"></i>
-        <p data-i18n="skill3"></p>
-      </div>
-
-      <div class="col-md-3 col-6 mb-4">
-        <i class="bi bi-graph-up fs-1"></i>
-        <p data-i18n="skill4"></p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-  <!-- Projetos -->
-  <section id="projects" class="py-5 bg-light">
+  <header id="home" class="hero">
     <div class="container">
-      <h2 class="text-center" data-i18n="projectsTitle">Projetos</h2>
-      <p class="text-center text-muted mb-4" data-i18n="projectsSubTitle">
-        Projetos desenvolvidos com responsabilidade técnica ponta a ponta, desde definição arquitetural até deploy e evolução contínua.
-      </p>
-      <div class="row g-4">
-        <div class="col-md-6">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body text-center">
-              <h5 class="card-title">Central dos Palpites</h5>
-              <p class="card-text" data-i18n="project1">Plataforma interativa de palpites esportivos em produção.</p>
-
-              <a href="https://centraldospalpites.com.br/" target="_blank" class="btn btn-primary">Acessar</a>
-              <button class="btn btn-outline-primary"
-                      data-bs-toggle="modal"
-                      data-bs-target="#caseCentral">
-                Ver Case Técnico
-              </button>
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <span class="eyebrow" data-i18n="heroEyebrow"></span>
+          <h1 class="hero-title" data-i18n="heroTitle"></h1>
+          <p class="hero-subtitle" data-i18n="heroSubtitle"></p>
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a href="#projects" class="btn btn-accent btn-lg" data-i18n="heroBtn"></a>
+            <a href="#contact" class="btn btn-outline-light btn-lg" data-i18n="heroBtn2"></a>
+          </div>
+          <div class="hero-stack mt-4">
+            <span data-i18n="heroStackLabel"></span>
+            <div class="stack-badges">
+              <span class="stack-badge">C# / .NET</span>
+              <span class="stack-badge">ASP.NET Core</span>
+              <span class="stack-badge">SQL Server</span>
+              <span class="stack-badge">REST APIs</span>
+              <span class="stack-badge">DDD</span>
+              <span class="stack-badge">CI/CD</span>
             </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body text-center">
-              <h5 class="card-title">Traço Mágico</h5>
-              <p class="card-text" data-i18n="project2">Projeto em desenvolvimento focado em ilustração e design digital.</p>
+        <div class="col-lg-5">
+          <div class="hero-card">
+            <img src="./images/foto.jpg" alt="Deivisson Santos" class="hero-photo" />
+            <div class="hero-card-body">
+              <h3>Deivisson Santos</h3>
+              <p data-i18n="heroRole"></p>
+              <div class="hero-card-links">
+                <a href="https://www.linkedin.com/in/deivisson-santos-96296b131/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/odeivissonsantos" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                <a href="mailto:deivisson.dev@gmail.com" aria-label="E-mail"><i class="bi bi-envelope-fill"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-              <a href="https://tracomagico.com.br/" target="_blank" class="btn btn-secondary" disabled>Em andamento...</a>
-              <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#caseTracoMagico">
-                Ver Case Técnico
-              </button>
+  <!-- Stats -->
+  <section class="stats-band">
+    <div class="container">
+      <div class="row text-center g-4">
+        <div class="col-6 col-lg-3"><div class="stat-num">5+</div><div class="stat-label" data-i18n="stat1"></div></div>
+        <div class="col-6 col-lg-3"><div class="stat-num">3</div><div class="stat-label" data-i18n="stat2"></div></div>
+        <div class="col-6 col-lg-3"><div class="stat-num">4</div><div class="stat-label" data-i18n="stat3"></div></div>
+        <div class="col-6 col-lg-3"><div class="stat-num">100%</div><div class="stat-label" data-i18n="stat4"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-head text-center">
+        <span class="eyebrow" data-i18n="servicesEyebrow"></span>
+        <h2 class="section-title" data-i18n="servicesTitle"></h2>
+        <p class="section-lead" data-i18n="servicesLead"></p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-cpu"></i></div>
+            <h5 data-i18n="service1Title"></h5>
+            <p data-i18n="service1Desc"></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-diagram-3"></i></div>
+            <h5 data-i18n="service2Title"></h5>
+            <p data-i18n="service2Desc"></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-hdd-network"></i></div>
+            <h5 data-i18n="service3Title"></h5>
+            <p data-i18n="service3Desc"></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-shield-check"></i></div>
+            <h5 data-i18n="service4Title"></h5>
+            <p data-i18n="service4Desc"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section section-alt">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-5">
+          <span class="eyebrow" data-i18n="aboutEyebrow"></span>
+          <h2 class="section-title" data-i18n="aboutTitle"></h2>
+          <p class="about-text" data-i18n="aboutText"></p>
+        </div>
+        <div class="col-lg-7">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <div class="value-card"><i class="bi bi-cpu"></i><div><strong data-i18n="skill1t"></strong><span data-i18n="skill1d"></span></div></div>
+            </div>
+            <div class="col-sm-6">
+              <div class="value-card"><i class="bi bi-diagram-3"></i><div><strong data-i18n="skill2t"></strong><span data-i18n="skill2d"></span></div></div>
+            </div>
+            <div class="col-sm-6">
+              <div class="value-card"><i class="bi bi-people"></i><div><strong data-i18n="skill3t"></strong><span data-i18n="skill3d"></span></div></div>
+            </div>
+            <div class="col-sm-6">
+              <div class="value-card"><i class="bi bi-graph-up-arrow"></i><div><strong data-i18n="skill4t"></strong><span data-i18n="skill4d"></span></div></div>
             </div>
           </div>
         </div>
@@ -143,215 +180,196 @@
     </div>
   </section>
 
-  <div class="modal fade" id="caseCentral" tabindex="-1">
-  <div class="modal-dialog modal-lg modal-dialog-scrollable">
-    <div class="modal-content">
-      
-      <div class="modal-header">
-        <h5 class="modal-title">Case Técnico – Central dos Palpites</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-
-      <div class="modal-body">
-
-        <h6>Contexto</h6>
-        <p>
-          Plataforma web interativa desenvolvida para criação de desafios de placar exato,
-          permitindo que usuários participem simultaneamente com validação automática dos resultados.
-        </p>
-
-        <h6>Problema</h6>
-        <p>
-          Garantir consistência de dados e integridade nas regras de premiação,
-          especialmente em cenários com múltiplos usuários enviando palpites ao mesmo tempo.
-          Era necessário evitar inconsistências, duplicidade de vencedores e conflitos de concorrência.
-        </p>
-
-        <h6>Decisão Arquitetural</h6>
-        <p>
-          Estruturação da aplicação utilizando arquitetura em camadas,
-          com separação clara entre domínio, aplicação e infraestrutura.
-          As regras de negócio foram modeladas de forma centralizada no domínio,
-          reduzindo acoplamento com a interface e facilitando manutenção futura.
-        </p>
-
-        <h6>Desafios Técnicos</h6>
-        <ul>
-          <li>Controle de concorrência na validação dos primeiros vencedores</li>
-          <li>Garantia de consistência transacional no banco de dados</li>
-          <li>Organização das regras de negócio de forma desacoplada</li>
-          <li>Preparação da base para crescimento de usuários</li>
-        </ul>
-
-        <h6>Solução Implementada</h6>
-        <ul>
-          <li>Definição completa da arquitetura da aplicação</li>
-          <li>Modelagem do domínio baseada nas regras do desafio</li>
-          <li>Implementação de APIs REST para comunicação estruturada</li>
-          <li>Estruturação de versionamento com Git</li>
-          <li>Configuração de deploy e ambiente de produção</li>
-        </ul>
-
-        <h6>Resultado</h6>
-        <p>
-          Aplicação estável em produção, com regras consistentes,
-          arquitetura preparada para evolução contínua
-          e base técnica organizada para expansão de funcionalidades futuras.
-        </p>
-
-        <h6>Principais Aprendizados</h6>
-        <ul>
-          <li>Concorrência deve ser considerada desde o design inicial</li>
-          <li>Modelagem correta do domínio reduz retrabalho</li>
-          <li>Separação de responsabilidades facilita escalabilidade</li>
-          <li>Arquitetura bem definida aumenta previsibilidade do sistema</li>
-        </ul>
-
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="caseTracoMagico" tabindex="-1">
-  <div class="modal-dialog modal-lg modal-dialog-scrollable">
-    <div class="modal-content">
-      
-      <div class="modal-header">
-        <h5 class="modal-title">Case Técnico – Traço Mágico</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-
-      <div class="modal-body">
-
-        <h6>Contexto</h6>
-        <p>
-          Plataforma educacional em desenvolvimento voltada à distribuição gratuita de histórias para colorir,
-          com potencial de crescimento para novos formatos de conteúdo digital.
-        </p>
-
-        <h6>Problema</h6>
-        <p>
-          Estruturar uma base sólida para organização de conteúdo,
-          permitindo escalabilidade futura, categorização eficiente
-          e preparação para expansão da base de usuários.
-        </p>
-
-        <h6>Decisão Arquitetural</h6>
-        <p>
-          Definição de arquitetura modular com separação clara entre domínio,
-          aplicação e camada de apresentação,
-          visando facilitar evolução contínua e manutenção do código.
-        </p>
-
-        <h6>Desafios Técnicos</h6>
-        <ul>
-          <li>Modelagem do domínio para organização de histórias e categorias</li>
-          <li>Estruturação eficiente de armazenamento e entrega de arquivos</li>
-          <li>Preparação para crescimento do volume de acessos</li>
-          <li>Organização da base para futura expansão de funcionalidades</li>
-        </ul>
-
-        <h6>Solução Implementada</h6>
-        <ul>
-          <li>Definição da arquitetura da aplicação desde o início do projeto</li>
-          <li>Modelagem de entidades focada em escalabilidade</li>
-          <li>Organização de fluxo de publicação e estruturação de conteúdo</li>
-          <li>Configuração de ambiente de deploy e versionamento</li>
-        </ul>
-
-        <h6>Status Atual</h6>
-        <p>
-          Projeto em desenvolvimento com base arquitetural consolidada,
-          preparado para expansão de funcionalidades e crescimento de usuários.
-        </p>
-
-        <h6>Principais Aprendizados</h6>
-        <ul>
-          <li>Importância de estruturar corretamente o domínio antes da interface</li>
-          <li>Planejamento arquitetural reduz retrabalho futuro</li>
-          <li>Projetos de conteúdo exigem organização e governança desde o início</li>
-        </ul>
-
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<section id="mentorship" class="py-5">
-  <div class="container">
-    <h2 class="text-center mb-4" data-i18n="mentorshipTitle"></h2>
-
-    <p class="text-center mb-5" data-i18n="mentorshipIntro"></p>
-
-    <div class="row text-center">
-      <div class="col-md-4 mb-4">
-        <h5 data-i18n="mentorshipImpactTitle"></h5>
-        <p data-i18n="mentorshipImpactText"></p>
-      </div>
-
-      <div class="col-md-4 mb-4">
-        <h5 data-i18n="mentorshipResultTitle"></h5>
-        <p data-i18n="mentorshipResultText"></p>
-      </div>
-
-      <div class="col-md-4 mb-4">
-        <h5 data-i18n="mentorshipFormalTitle"></h5>
-        <p data-i18n="mentorshipFormalText"></p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="education" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="text-center mb-5" data-i18n="educationTitle"></h2>
-
-    <div class="row">
-
-      <div class="col-md-6 mb-4">
-        <h5 data-i18n="edu1Title"></h5>
-        <p data-i18n="edu1Desc"></p>
-      </div>
-
-      <div class="col-md-6 mb-4">
-        <h5 data-i18n="edu2Title"></h5>
-        <p data-i18n="edu2Desc"></p>
-      </div>
-
-      <div class="col-md-6 mb-4">
-        <h5 data-i18n="edu3Title"></h5>
-        <p data-i18n="edu3Desc"></p>
-      </div>
-
-      <div class="col-md-6 mb-4">
-        <h5 data-i18n="edu4Title"></h5>
-        <p data-i18n="edu4Desc"></p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-  <!-- Contato -->
-  <section id="contact" class="py-5">
+  <!-- Projects -->
+  <section id="projects" class="section">
     <div class="container">
-      <h2 class="text-center mb-4" data-i18n="contactTitle">Contato</h2>
-      <div class="text-center">
-        <p><i class="bi bi-envelope"></i> deivisson.dev@gmail.com</p>
-        <p><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/deivisson-santos-96296b131/" target="_blank">LinkedIn</a></p>
-        <p><i class="bi bi-github"></i> <a href="https://github.com/odeivissonsantos" target="_blank">GitHub</a></p>
+      <div class="section-head text-center">
+        <span class="eyebrow" data-i18n="projectsEyebrow"></span>
+        <h2 class="section-title" data-i18n="projectsTitle"></h2>
+        <p class="section-lead" data-i18n="projectsSubTitle"></p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <article class="project-card">
+            <div class="project-tag" data-i18n="projTagLive"></div>
+            <h4>Treinex</h4>
+            <p data-i18n="project3"></p>
+            <div class="project-meta">.NET · C# · Arquitetura em Camadas · SQL Server · DDD · CI · CD · APIs REST · Webhook · Integração com Pagamentos Online Asaas</div>
+            <div class="project-actions">
+              <a href="https://treinex.com.br/" target="_blank" rel="noopener" class="btn btn-accent btn-sm" data-i18n="projAccess"></a>
+              <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#caseTreinex" data-i18n="projCase"></button>
+            </div>
+          </article>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <article class="project-card">
+            <div class="project-tag" data-i18n="projTagLive"></div>
+            <h4>Central dos Palpites</h4>
+            <p data-i18n="project1"></p>
+            <div class="project-meta">.NET · C# · APIs REST · SQL Server · Arquitetura em Camadas · DDD · CI · CD</div>
+            <div class="project-actions">
+              <a href="https://centraldospalpites.com.br/" target="_blank" rel="noopener" class="btn btn-accent btn-sm" data-i18n="projAccess"></a>
+              <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#caseCentral" data-i18n="projCase"></button>
+            </div>
+          </article>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <article class="project-card">
+            <div class="project-tag" data-i18n="projTagLive"></div>
+            <h4>Traço Mágico</h4>
+            <p data-i18n="project2"></p>
+            <div class="project-meta">.NET · C# · SQL Server · Arquitetura em Camadas · DDD · CI · CD</div>
+            <div class="project-actions">
+              <a href="https://tracomagico.com.br/" target="_blank" rel="noopener" class="btn btn-accent btn-sm" data-i18n="projAccess"></a>
+              <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#caseTracoMagico" data-i18n="projCase"></button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section id="process" class="section section-alt">
+    <div class="container">
+      <div class="section-head text-center">
+        <span class="eyebrow" data-i18n="processEyebrow"></span>
+        <h2 class="section-title" data-i18n="processTitle"></h2>
+        <p class="section-lead" data-i18n="processLead"></p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="step-card"><span class="step-num">01</span><h5 data-i18n="step1t"></h5><p data-i18n="step1d"></p></div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="step-card"><span class="step-num">02</span><h5 data-i18n="step2t"></h5><p data-i18n="step2d"></p></div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="step-card"><span class="step-num">03</span><h5 data-i18n="step3t"></h5><p data-i18n="step3d"></p></div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="step-card"><span class="step-num">04</span><h5 data-i18n="step4t"></h5><p data-i18n="step4d"></p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mentorship -->
+  <section id="mentorship" class="section">
+    <div class="container">
+      <div class="section-head text-center">
+        <span class="eyebrow" data-i18n="mentorshipEyebrow"></span>
+        <h2 class="section-title" data-i18n="mentorshipTitle"></h2>
+        <p class="section-lead" data-i18n="mentorshipIntro"></p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="info-card"><i class="bi bi-bullseye"></i><h5 data-i18n="mentorshipImpactTitle"></h5><p data-i18n="mentorshipImpactText"></p></div>
+        </div>
+        <div class="col-md-4">
+          <div class="info-card"><i class="bi bi-trophy"></i><h5 data-i18n="mentorshipResultTitle"></h5><p data-i18n="mentorshipResultText"></p></div>
+        </div>
+        <div class="col-md-4">
+          <div class="info-card"><i class="bi bi-patch-check"></i><h5 data-i18n="mentorshipFormalTitle"></h5><p data-i18n="mentorshipFormalText"></p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="section section-alt">
+    <div class="container">
+      <div class="section-head text-center">
+        <span class="eyebrow" data-i18n="educationEyebrow"></span>
+        <h2 class="section-title" data-i18n="educationTitle"></h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="edu-card"><i class="bi bi-mortarboard"></i><div><h5 data-i18n="edu1Title"></h5><p data-i18n="edu1Desc"></p></div></div>
+        </div>
+        <div class="col-md-6">
+          <div class="edu-card"><i class="bi bi-mortarboard"></i><div><h5 data-i18n="edu2Title"></h5><p data-i18n="edu2Desc"></p></div></div>
+        </div>
+        <div class="col-md-6">
+          <div class="edu-card"><i class="bi bi-mortarboard"></i><div><h5 data-i18n="edu3Title"></h5><p data-i18n="edu3Desc"></p></div></div>
+        </div>
+        <div class="col-md-6">
+          <div class="edu-card"><i class="bi bi-mortarboard"></i><div><h5 data-i18n="edu4Title"></h5><p data-i18n="edu4Desc"></p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / CTA -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="contact-box text-center">
+        <span class="eyebrow" data-i18n="contactEyebrow"></span>
+        <h2 class="section-title" data-i18n="contactTitle"></h2>
+        <p class="section-lead mx-auto" data-i18n="contactLead"></p>
+        <div class="contact-links">
+          <a href="mailto:deivisson.dev@gmail.com" class="contact-link"><i class="bi bi-envelope-fill"></i> deivisson.dev@gmail.com</a>
+          <a href="https://www.linkedin.com/in/deivisson-santos-96296b131/" target="_blank" rel="noopener" class="contact-link"><i class="bi bi-linkedin"></i> LinkedIn</a>
+          <a href="https://github.com/odeivissonsantos" target="_blank" rel="noopener" class="contact-link"><i class="bi bi-github"></i> GitHub</a>
+        </div>
+        <a href="mailto:deivisson.dev@gmail.com" class="btn btn-accent btn-lg mt-4" data-i18n="contactBtn"></a>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="text-center py-3 bg-light border-top">
-    <p>© 2026 Deivisson Santos</p>
+  <footer class="site-footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <div class="d-flex align-items-center gap-2">
+        <span class="brand-mark sm">DS</span>
+        <span>Deivisson Santos</span>
+      </div>
+      <span class="footer-meta" data-i18n="footerMeta"></span>
+      <span>© 2026 · <span data-i18n="footerRights"></span></span>
+    </div>
   </footer>
 
-  <!-- JS -->
+  <!-- Modal: Treinex -->
+  <div class="modal fade" id="caseTreinex" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Case Técnico — Treinex</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body" id="caseTreinexBody"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Central dos Palpites -->
+  <div class="modal fade" id="caseCentral" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Case Técnico — Central dos Palpites</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body" id="caseCentralBody"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Traço Mágico -->
+  <div class="modal fade" id="caseTracoMagico" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Case Técnico — Traço Mágico</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body" id="caseTracoBody"></div>
+      </div>
+    </div>
+  </div>
+
+  <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo"><i class="bi bi-arrow-up"></i></button>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
